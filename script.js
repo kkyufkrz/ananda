@@ -203,7 +203,7 @@ function animateCountUp() {
     const el = document.getElementById('countNum');
     if (!el) return;
     let count = 0;
-    const target = 23;
+    const target = 22;
     const duration = 1200;
     const step = target / (duration / 16);
     el.textContent = '0';
