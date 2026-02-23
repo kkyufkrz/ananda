@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Ann! 🎂</title>
+    <meta name="description"
+        content="Selamat ulang tahun ke-23 buat Ananda Salsabila. Semoga tahun ini jadi yang terbaik." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Circular+Std:wght@400;700;900&family=Inter:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-container" id="progressBarContainer">
+        <div class="progress-segments" id="progressSegments"></div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="nav-btn nav-prev" id="prevBtn" aria-label="Previous slide">&#8592;</button>
+    <button class="nav-btn nav-next" id="nextBtn" aria-label="Next slide">&#8594;</button>
+
+    <!-- Tap Zones -->
+    <div class="tap-zone tap-left" id="tapLeft"></div>
+    <div class="tap-zone tap-right" id="tapRight"></div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="videoplayback.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Slides Container -->
+    <div class="slides-wrapper" id="slidesWrapper">
+
+        <!-- SLIDE 1: Welcome -->
+        <div class="slide slide-1 active" id="slide-0">
+            <div class="bg-blob blob-1"></div>
+            <div class="bg-blob blob-2"></div>
+            <div class="particles" id="particles-0"></div>
+            <div class="slide-content center-content">
+                <div class="logo-badge" data-animate="fade-up" data-delay="0">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Birthday Wrapped</span>
+                </div>
+                <p class="slide-label" data-animate="fade-up" data-delay="200">Haloooooo,</p>
+                <h1 class="hero-name" data-animate="fade-up" data-delay="400">Ananda<br />Salsabila</h1>
+                <button class="cta-btn" id="startBtn" data-animate="fade-up" data-delay="1000">Open now →</button>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: Age Reveal -->
+        <div class="slide slide-2" id="slide-1">
+            <div class="bg-blob blob-3"></div>
+            <div class="bg-blob blob-4"></div>
+            <div class="particles" id="particles-1"></div>
+            <div class="slide-content center-content">
+                <p class="slide-label" data-animate="fade-up" data-delay="0">today you turn</p>
+                <div class="big-number-wrap">
+                    <div class="big-number" id="countNum" data-animate="pop" data-delay="300">23</div>
+                    <div class="big-number-shadow">23</div>
+                </div>
+                <h2 class="slide-title" data-animate="fade-up" data-delay="600">years old! 🎉</h2>
+                <p class="slide-sub" data-animate="fade-up" data-delay="900">
+                    This Wrapped is dedicated to the girl who makes everyday like a hit song. Happy birthday, My Love!
+                    Let's make this chapter the best one yet. Now playing: Your brightest year.✨
+                </p>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: About The Birthday Girl -->
+        <div class="slide slide-3" id="slide-2">
+            <div class="bg-blob blob-5"></div>
+            <div class="particles" id="particles-2"></div>
+            <div class="slide-content center-content">
+                <p class="slide-label" data-animate="fade-up" data-delay="0">✦ About The Birthday Girl ✦</p>
+
+                <!-- Avatar & Name -->
+                <div class="profile-avatar-wrap" data-animate="pop" data-delay="200">
+                    <div class="profile-avatar">A</div>
+                    <div class="profile-verified">✦ 23 ✦</div>
+                </div>
+                <h2 class="profile-name" data-animate="fade-up" data-delay="450">Ananda Salsabila</h2>
+
+                <!-- Artist Bio -->
+                <p class="artist-bio" data-animate="fade-up" data-delay="650">
+                    A multi-talented soul known for being a true overachiever and a dedicated hard worker.
+                    Beyond her brilliant mind, she is the definition of perfect.The kind of person who
+                    lights up every room without even trying. Her laugh is contagious, her heart is genuine,
+                    and her presence alone makes everything feel a little more right. At 23, she's already
+                    a masterpiece, and somehow, she keeps getting better.
+                </p>
+
+                <!-- Album Credits -->
+                <div class="album-credits" data-animate="fade-up" data-delay="900">
+                    <div class="credit-row">
+                        <span class="credit-key">Release Date</span>
+                        <span class="credit-val">February 23, 2026</span>
+                    </div>
+                    <div class="credit-row">
+                        <span class="credit-key">Written by</span>
+                        <span class="credit-val">Fate &amp; God</span>
+                    </div>
+                    <div class="credit-row">
+                        <span class="credit-key">Label</span>
+                        <span class="credit-val">Ann Records</span>
+                    </div>
+                    <div class="credit-row">
+                        <span class="credit-key">Genre</span>
+                        <span class="credit-val">All Time Favorites</span>
+                    </div>
+                    <div class="credit-row">
+                        <span class="credit-key">Duration</span>
+                        <span class="credit-val">Forever and Always</span>
+                    </div>
+                    <div class="credit-row">
+                        <span class="credit-key">Copyright</span>
+                        <span class="credit-val">Azhar @ 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: Love Letter -->
+        <div class="slide slide-4" id="slide-3">
+            <div class="bg-blob blob-6"></div>
+            <div class="bg-blob blob-7"></div>
+            <div class="particles" id="particles-3"></div>
+            <div class="slide-content letter-content">
+                <div class="letter-wrap" data-animate="fade-up" data-delay="0">
+                    <p class="letter-to">Happy Birthday, Love.</p>
+
+                    <p class="letter-body">
+                        On your special day, I just want you to know how incredibly proud I am of the person you are.
+                        I've seen how hard you work and how much heart you put into everything you do. I truly believe
+                        that all your efforts will lead you to the success you deserve, and I want you to know that
+                        I'll always be right here, cheering you on as you achieve every single one of your dreams.
+                    </p>
+
+                    <p class="letter-body">
+                        I pray for your happiness, your health, and for you to be blessed with abundance in everything
+                        you do. May Allah always protect you in every step you take and surround you with a peace
+                        that never fades.
+                    </p>
+
+                    <p class="letter-body">
+                        I know life can be tough and lonely sometimes, but I want you to remember that you don't have
+                        to carry it all on your own anymore. You are not alone. Through the highs and the lows,
+                        I will stay by your side. I hope my presence brings you the same comfort and happiness
+                        that you've always given me. No words can truly express how much you mean to me.
+                        I hope we can keep moving forward together, no matter what the future holds.
+                    </p>
+
+                    <p class="letter-closing">
+                        Have the most beautiful birthday, my everything.<br />
+                        <em>I love you so damn much.</em>
+                    </p>
+
+                    <p class="letter-signature">— Azhar</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: Playlist -->
+        <div class="slide slide-5" id="slide-4">
+            <div class="bg-blob blob-8"></div>
+            <div class="particles" id="particles-4"></div>
+            <div class="slide-content">
+                <p class="slide-label" data-animate="fade-up" data-delay="0">Songs that remind me of you</p>
+                <h2 class="slide-title" data-animate="fade-up" data-delay="200">Our Playlist 🎧</h2>
+                <div class="song-list" data-animate="fade-up" data-delay="400">
+                    <div class="song-item" style="--i:0">
+                        <div class="song-rank">#1</div>
+                        <div class="song-cover" style="background: linear-gradient(135deg, #f093fb, #f5576c);">🎵</div>
+                        <div class="song-info">
+                            <div class="song-title">Perfect</div>
+                            <div class="song-artist">Ed Sheeran</div>
+                        </div>
+                        <div class="song-duration">4:23</div>
+                    </div>
+                    <div class="song-item" style="--i:1">
+                        <div class="song-rank">#2</div>
+                        <div class="song-cover" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">🎵</div>
+                        <div class="song-info">
+                            <div class="song-title">All of Me</div>
+                            <div class="song-artist">John Legend</div>
+                        </div>
+                        <div class="song-duration">4:29</div>
+                    </div>
+                    <div class="song-item" style="--i:2">
+                        <div class="song-rank">#3</div>
+                        <div class="song-cover" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">🎵</div>
+                        <div class="song-info">
+                            <div class="song-title">A Thousand Years</div>
+                            <div class="song-artist">Christina Perri</div>
+                        </div>
+                        <div class="song-duration">4:45</div>
+                    </div>
+                    <div class="song-item" style="--i:3">
+                        <div class="song-rank">#4</div>
+                        <div class="song-cover" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">🎵</div>
+                        <div class="song-info">
+                            <div class="song-title">Die For You</div>
+                            <div class="song-artist">The Weeknd</div>
+                        </div>
+                        <div class="song-duration">4:21</div>
+                    </div>
+                    <div class="song-item" style="--i:4">
+                        <div class="song-rank">#5</div>
+                        <div class="song-cover" style="background: linear-gradient(135deg, #fa709a, #fee140);">🎵</div>
+                        <div class="song-info">
+                            <div class="song-title">Teman Hidup</div>
+                            <div class="song-artist">Tulus</div>
+                        </div>
+                        <div class="song-duration">4:05</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: Make a Wish -->
+        <div class="slide slide-6" id="slide-5">
+            <div class="bg-blob blob-9"></div>
+            <div class="bg-blob blob-10"></div>
+            <div class="particles" id="particles-5"></div>
+            <div class="slide-content center-content">
+                <p class="slide-label" data-animate="fade-up" data-delay="0">✦ a little wish from me ✦</p>
+                <h2 class="slide-title" data-animate="fade-up" data-delay="200">Make a Wish 🕯️</h2>
+                <div class="wish-bubbles" data-animate="fade-up" data-delay="500">
+                    <div class="wish-bubble" style="--delay: 0s">
+                        🌸 Semoga kamu selalu sehat dan nggak pernah kelelahan sendirian
+                    </div>
+                    <div class="wish-bubble" style="--delay: 0.15s">
+                        ✨ Semoga kamu dapet semua yang selama ini kamu usahain
+                    </div>
+                    <div class="wish-bubble" style="--delay: 0.3s">
+                        🤍 Semoga kamu selalu dikelilingi orang-orang yang beneran sayang sama kamu
+                    </div>
+                    <div class="wish-bubble" style="--delay: 0.45s">
+                        🌙 Semoga malem-malem kamu nggak overthinking sendirian lagi
+                    </div>
+                    <div class="wish-bubble" style="--delay: 0.6s">
+                        🎂 Semoga tahun ini jadi salah satu tahun terbaik dalam hidup kamu
+                    </div>
+                    <div class="wish-bubble" style="--delay: 0.75s">
+                        💫 Semoga kamu tahu betapa berartinya kamu buat orang-orang di sekitar kamu
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: Her Qualities -->
+        <div class="slide slide-7" id="slide-6">
+            <div class="bg-blob blob-11"></div>
+            <div class="particles" id="particles-6"></div>
+            <div class="slide-content center-content">
+                <p class="slide-label" data-animate="fade-up" data-delay="0">✦ measured by heart ✦</p>
+                <h2 class="slide-title" data-animate="fade-up" data-delay="200">Her Qualities</h2>
+
+                <div class="genre-display" data-animate="pop" data-delay="450">
+                    <div class="genre-vinyl">💙</div>
+                    <div class="genre-name">Ananda Salsabila</div>
+                    <div class="genre-desc">One-of-a-kind. Irreplaceable. Timeless.</div>
+                </div>
+
+                <div class="genre-bar-wrap" data-animate="fade-up" data-delay="700">
+                    <div class="genre-bar-item">
+                        <span>Hard Worker</span>
+                        <div class="genre-bar">
+                            <div class="genre-bar-fill" style="--w: 100%; background: #1db954;"></div>
+                        </div>
+                    </div>
+                    <div class="genre-bar-item">
+                        <span>Kindness</span>
+                        <div class="genre-bar">
+                            <div class="genre-bar-fill" style="--w: 97%; background: #f9a8d4;"></div>
+                        </div>
+                    </div>
+                    <div class="genre-bar-item">
+                        <span>Genuinely Caring</span>
+                        <div class="genre-bar">
+                            <div class="genre-bar-fill" style="--w: 99%; background: #60a5fa;"></div>
+                        </div>
+                    </div>
+                    <div class="genre-bar-item">
+                        <span>Main Character Energy</span>
+                        <div class="genre-bar">
+                            <div class="genre-bar-fill" style="--w: 98%; background: #fbbf24;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 8: Final -->
+        <div class="slide slide-9" id="slide-7">
+            <div class="bg-blob blob-14"></div>
+            <div class="bg-blob blob-15"></div>
+            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="particles" id="particles-7"></div>
+            <div class="slide-content center-content">
+                <div class="final-emoji" data-animate="pop" data-delay="0">🎂</div>
+                <h1 class="final-title" data-animate="fade-up" data-delay="300">
+                    Happy Birthday,<br />Ananda Salsabila
+                </h1>
+                <p class="final-message" data-animate="fade-up" data-delay="600">
+                    You are loved more than words can say.<br />
+                </p>
+                <div class="share-section" data-animate="fade-up" data-delay="900">
+                    <!-- <button class="share-btn" id="shareBtn">🔗 Share</button> -->
+                    <button class="restart-btn" id="restartBtn">↩ Replay</button>
+                </div>
+                <div class="spotify-credit" data-animate="fade-up" data-delay="1100">
+                    🎵 Birthday Wrapped · with love, Azhar · 2026
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sound Toggle -->
+    <button class="sound-btn" id="soundBtn" title="Toggle sound">🔇</button>
+
+    <!-- Pause Toggle -->
+    <button class="pause-btn" id="pauseBtn" title="Pause / Resume">⏸</button>
+
+    <!-- Pause Overlay Indicator -->
+    <div class="pause-overlay" id="pauseOverlay">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
